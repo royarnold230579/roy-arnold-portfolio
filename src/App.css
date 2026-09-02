@@ -5,9 +5,15 @@
   padding: 24px 48px;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 1.2rem;
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  display: block;
+  width: 240px;
+  height: auto;
 }
 
 .header ul {
@@ -392,6 +398,9 @@
 @media (max-width: 768px) {
   .header {
     padding: 20px 24px;
+  }
+  .header-logo img {
+    width: 200px;
   }
 
   .header nav {

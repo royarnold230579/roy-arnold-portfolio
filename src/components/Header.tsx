@@ -1,7 +1,11 @@
+import logo from "../assets/roy-arnold-logo.png";
+
 function Header() {
   return (
     <header className="header">
-      <h1>{"< Roy Arnold />"}</h1>
+      <a href="#home" className="header-logo">
+        <img src={logo} alt="Roy Arnold" />
+      </a>
       <nav>
         <ul>
           <li>
