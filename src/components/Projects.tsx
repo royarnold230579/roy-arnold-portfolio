@@ -9,7 +9,7 @@ const projects = [
     status: "Featured",
     image: weatherScreenshot,
     github: "https://github.com/royarnold230579/whatever-the-weather",
-    live: "",
+    live: "https://weather.royarnold.co.uk",
   },
   {
     title: "FLICCS",
