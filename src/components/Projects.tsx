@@ -19,8 +19,8 @@ const projects = [
     technologies: ["Vue 3", "TypeScript", "Tailwind CSS", "LocalStorage"],
     status: "Featured",
     image: stickerTrackerScreenshot,
-    github: "",
-    live: "",
+    github: "https://github.com/royarnold230579/world-cup-sticker-tracker",
+    live: "https://stickers.royarnold.co.uk",
   },
   {
     title: "FLICCS",
