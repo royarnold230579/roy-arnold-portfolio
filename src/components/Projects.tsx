@@ -1,4 +1,5 @@
 import weatherScreenshot from "../assets/projects/whatever-the-weather.jpg";
+import stickerTrackerScreenshot from "../assets/projects/world-cup-sticker-tracker.jpg";
 
 const projects = [
   {
@@ -10,6 +11,16 @@ const projects = [
     image: weatherScreenshot,
     github: "https://github.com/royarnold230579/whatever-the-weather",
     live: "https://weather.royarnold.co.uk",
+  },
+  {
+    title: "2026 World Cup Sticker Tracker",
+    description:
+      "An interactive sticker collection tracker with progress tracking, missing stickers, duplicate swaps and localStorage persistence.",
+    technologies: ["Vue 3", "TypeScript", "Tailwind CSS", "LocalStorage"],
+    status: "Featured",
+    image: stickerTrackerScreenshot,
+    github: "",
+    live: "",
   },
   {
     title: "FLICCS",
