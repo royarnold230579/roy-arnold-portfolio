@@ -1,7 +1,26 @@
+import { Link } from "react-router-dom";
 import weatherScreenshot from "../assets/projects/whatever-the-weather.jpg";
 import stickerTrackerScreenshot from "../assets/projects/world-cup-sticker-tracker.jpg";
+import superStarsScreenshot from "../assets/projects/super-stars.png";
 
 const projects = [
+  {
+    title: "Super Stars — Stock Manager",
+    description:
+      "A responsive stock management application featuring 15 product packs, real-time stock calculations, order processing, inventory replenishment and browser-based data persistence.",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "CSS Modules",
+      "LocalStorage",
+    ],
+    status: "Featured",
+    image: superStarsScreenshot,
+    github: "",
+    live: "https://superstars.royarnold.co.uk",
+    caseStudy: "/projects/super-stars",
+  },
   {
     title: "Whatever the Weather",
     description:
@@ -11,6 +30,7 @@ const projects = [
     image: weatherScreenshot,
     github: "https://github.com/royarnold230579/whatever-the-weather",
     live: "https://weather.royarnold.co.uk",
+    caseStudy: "",
   },
   {
     title: "2026 World Cup Sticker Tracker",
@@ -21,15 +41,7 @@ const projects = [
     image: stickerTrackerScreenshot,
     github: "https://github.com/royarnold230579/world-cup-sticker-tracker",
     live: "https://stickers.royarnold.co.uk",
-  },
-  {
-    title: "FLICCS",
-    description:
-      "A movie discovery application for exploring films and finding something new to watch.",
-    technologies: ["React", "TypeScript"],
-    status: "In Development",
-    github: "",
-    live: "",
+    caseStudy: "",
   },
 ];
 
@@ -79,6 +91,13 @@ function Projects() {
                   className="project-link project-link-primary">
                   Live Demo
                 </a>
+              )}
+              {project.caseStudy && (
+                <Link
+                  to={project.caseStudy}
+                  className="project-link project-link-secondary">
+                  View Case Study
+                </Link>
               )}
             </div>
           </div>

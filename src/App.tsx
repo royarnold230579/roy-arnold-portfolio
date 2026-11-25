@@ -6,6 +6,8 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { Routes, Route } from "react-router-dom";
+import SuperStarsCaseStudy from "./pages/SuperStarsCaseStudy";
 
 function App() {
   return (
@@ -13,11 +15,25 @@ function App() {
       <Header />
 
       <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <About />
+                <Skills />
+                <Projects />
+                <Contact />
+              </>
+            }
+          />
+
+          <Route
+            path="/projects/super-stars"
+            element={<SuperStarsCaseStudy />}
+          />
+        </Routes>
       </main>
 
       <Footer />
